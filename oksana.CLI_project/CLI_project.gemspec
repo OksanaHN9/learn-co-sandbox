@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "oksana_CLI_project/version"
+require "CLI_project/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "oksana_CLI_project"
-  spec.version       = OksanaCLIProject::VERSION
+  spec.name          = "CLI_project"
+  spec.version       = CLIProject::VERSION
   spec.authors       = ["'Oksana Nichols'"]
   spec.email         = ["'oksanahnichols@yahoo.com'"]
 

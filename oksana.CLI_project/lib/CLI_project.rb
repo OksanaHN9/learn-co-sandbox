@@ -1,6 +1,6 @@
-require "oksana_CLI_project/version"
+require "CLI_project/version"
 
-module OksanaCLIProject
+module CLIProject
   class Error < StandardError; end
   # Your code goes here...
 end
