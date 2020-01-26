@@ -1,3 +1,4 @@
-class SteamGames::CLI
+class Genre 
+  
 
   
