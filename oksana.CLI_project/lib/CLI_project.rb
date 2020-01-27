@@ -3,7 +3,7 @@ Class GameGenre::CLI
 def call 
   list_genre
   title
-  description
+  genre_description
 
 def list_genre
  puts "Lists four genres to choose from"
@@ -21,3 +21,10 @@ def title
   end 
 end 
 
+def genre_description 
+  input = nil 
+  while input != "exit"
+  puts "Please select the genre you want to know more about and we will provide a description of what you can expect if you choose to play that genre."
+  genre_description = @GameGenre.description[input.to_i-1]
+  
+  
