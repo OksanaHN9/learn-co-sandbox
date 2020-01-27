@@ -27,4 +27,12 @@ def genre_description
   puts "Please select the genre you want to know more about and we will provide a description of what you can expect if you choose to play that genre or to return to the main menu select exit"
   genre_description = @GameGenre.description[input.to_i-1]
   
-  
+  elsif input == "description of genre" "action""horror" "fps" "mmo"
+    select_description.read.back 
+  elsif input == "exit"
+    see you soon 
+  else 
+    puts "Please either select description of genre, action, horror, fps, mmo, or exit."
+  end
+end   
+end 
