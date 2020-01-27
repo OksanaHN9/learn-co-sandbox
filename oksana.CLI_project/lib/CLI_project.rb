@@ -1,13 +1,8 @@
 Class GameGenre::CLI
-attr_accessor :title, :developer, :genre, :description
   
-end 
-
 def call 
   list_genre
   title
-  developer
-  genre
   description
 
 def list_genre
@@ -19,5 +14,10 @@ def list_genre
 end 
  
 def title 
-  puts "Here are a list of titles based on the genre you selected"
-  
+  puts "Here are how many titles are available for the genre you selected"
+  @title = Game_Title::Title  
+  @title.each.with_index(4) do |title, i| 
+    puts "#{i}". #{action.four} #{horror.five} #{fps.three} #{mmo.four} 
+  end 
+end 
+
