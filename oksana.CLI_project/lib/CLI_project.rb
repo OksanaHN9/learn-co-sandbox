@@ -1,11 +1,10 @@
-Class ::CLI
+Class GameGenre::CLI
 
-def begin 
-  main_menu 
+def call 
+  list_genre 
 end 
 
-def main_menu
-  puts <<steamstore.com>> 
-  "Welcome to your steamstore where you can access a wide variety of games based on your genre preference." 
-  "This application will select games based on the genre you want" 
-  "We will select a few games based on the genre you select" 
+def list_genre
+ puts "Lists four genres to choose from"
+ @genres = Game_Genre::Genre.menu 
+ @genres.each.with_index(4) do |genres,|
