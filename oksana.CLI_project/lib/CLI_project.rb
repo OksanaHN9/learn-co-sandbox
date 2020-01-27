@@ -8,7 +8,7 @@ def call
 def list_genre
  puts "Lists four genres to choose from"
  @genres = Game_Genre::Genre.menu 
- @genres.each.with_index(1) do |genres, i|
+ @genres.each.with_index(4) do |genres, i|
    puts "#{i}". #{genre.action} #{genre.horror} #{genre.fps} #{genre.mmo} 
   end 
 end 
@@ -24,7 +24,7 @@ end
 def genre_description 
   input = nil 
   while input != "exit"
-  puts "Please select the genre you want to know more about and we will provide a description of what you can expect if you choose to play that genre."
+  puts "Please select the genre you want to know more about and we will provide a description of what you can expect if you choose to play that genre or to return to the main menu select exit"
   genre_description = @GameGenre.description[input.to_i-1]
   
   
